@@ -4,6 +4,8 @@ BassAccorder est une application Python pour accorder une guitare basse en utili
 
 L'application capture le son, analyse la fréquence principale et affiche les résultats.
 
+## La capture du son utilise la bibliothèque pyaudio pour capturer le son.
+
 ## Installation
 
 ```sh
