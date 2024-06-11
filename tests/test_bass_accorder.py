@@ -1,4 +1,5 @@
 import unittest
+import numpy as np
 from bass_accorder.audio_capture import get_audio_stream, record_audio
 from bass_accorder.frequency_analysis import analyze_frequency
 

@@ -1,6 +1,11 @@
 import matplotlib.pyplot as plt
-from .audio_capture.py import get_audio_stream, record_audio
+from .audio_capture import get_audio_stream, record_audio
 from .frequency_analysis import analyze_frequency
+from scipy.fftpack import fft 
+import numpy as np
+
+# Paramètres d'enregistrement
+RATE = 44100  # Taux d'échantillonnage
 
 def plot_data(data, freq):
     plt.figure(figsize=(10, 6))

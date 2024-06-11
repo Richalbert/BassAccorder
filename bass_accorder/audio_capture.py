@@ -1,10 +1,11 @@
 import pyaudio
 import numpy as np
 
-FORMAT = pyaudio.paInt16
-CHANNELS = 1
-RATE = 44100
-CHUNK = 1024
+# Parametres d'enregistrement
+FORMAT = pyaudio.paInt16    # Format des donnees audio
+CHANNELS = 1    # Nombre de canaux (mono)
+RATE = 44100    # Taux d'echantillonnage
+CHUNK = 1024    # Taille du buffer
 
 def get_audio_stream():
     audio = pyaudio.PyAudio()
