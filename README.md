@@ -10,6 +10,11 @@ Elle capture le son, analyse la fréquence principale et affiche les résultats.
 
 3. L'affichage du signal audio et de la frequence principale utilise la bibliotheque 'matplotlib'
 
+la version 0.1 affiche une fenetre suivante lorsque la precedente est fermee
+
+la version 0.2 introduit un affichage temps reel, avec une mise a jour de la fenetre graphique de maniere continue sans devoir la fermer, a l'aide d'un mecanisme de boucle d'evenements mettant a jour les donnees dans la figure existante
+
+
 ## Installation
 
 ```sh
