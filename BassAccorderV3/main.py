@@ -59,8 +59,14 @@ if __name__ == "__main__":
     ax1 = fig.add_subplot(211)
     ax2 = fig.add_subplot(212)
     
-    for i in range(0, int(RATE / CHUNK * RECORD_SECONDS)):
-        soundPlot(stream, ax1, ax2)
+    # for i in range(0, int(RATE / CHUNK * RECORD_SECONDS)):
+    #     soundPlot(stream, ax1, ax2)
+
+    try:
+        while True:
+            soundPlot(stream, ax1, ax2)
+    except KeyboardInterrupt:
+        print("Exiting ...")
     
     stream.stop_stream()
     stream.close()

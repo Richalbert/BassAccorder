@@ -46,41 +46,6 @@ class TestBassAccorderV3(unittest.TestCase):
 
 
 
-
-
-
-    # '''genere une onde de 440 Hz qui correspond a la note La (A4)'''
-    # def test_analyze_frequency(self):
-    #     # Generate a 440 Hz sine wave
-    #     fs = 44100  # Sample rate
-    #     duration = 1.0  # Duration in seconds
-    #     t = np.linspace(0, duration, int(fs * duration), endpoint=False)
-    #     frequency = 440  # Frequency of the sine wave
-    #     sine_wave = 0.5 * np.sin(2 * np.pi * frequency * t)
-        
-    #     # Analyze frequency pour detecter la frequence de l'onde
-    #     detected_freq = analyze_frequency(sine_wave, fs)
-        
-    #     # Assert the detected frequency is close to 440 Hz 
-    #     # avec une marge d'erreur de 1 Hz
-    #     self.assertAlmostEqual(detected_freq, 440, delta=1.0)
-
-    # '''ce test ne verifie pas visuellement le graphique mais s'assure que 
-    # la fonction ne plante pas    '''
-    # def test_plot_data(self):
-    #     # Generate a 440 Hz sine wave
-    #     fs = 44100  # Sample rate
-    #     duration = 1.0  # Duration in seconds
-    #     t = np.linspace(0, duration, int(fs * duration), endpoint=False)
-    #     frequency = 440  # Frequency of the sine wave
-    #     sine_wave = 0.5 * np.sin(2 * np.pi * frequency * t)
-        
-    #     try:
-    #         # Plot data (this won't display a plot in a test, but will check for errors)
-    #         plot_data(sine_wave, frequency)
-    #     except Exception as e:
-    #         self.fail(f"plot_data raised an exception: {e}")
-
 if __name__ == '__main__':
     unittest.main()
 
